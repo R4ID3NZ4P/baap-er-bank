@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choto Pola's Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold text-center mt-4">Welcome to <span class="text-purple-500">Baap er Bank</span></h1>
+        <h3 class="text-3xl font-semibold text-center mt-4 mb-16">Let's get some <span class="text-purple-500">moooooney!!!</span></h3>
+    </header>
+
+    <main>
+        <!-- status panel -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 w-9/12 mx-auto text-white mb-16">
+            <div class="bg-green-400 px-8 py-5 rounded-xl">
+                <h3 class="text-2xl font-semibold">Deposit</h3>
+                <p class="text-7xl font-bold">$<span id="deposit-total">0</span></p>
+            </div>
+            <div class="bg-blue-400 px-8 py-5 rounded-xl">
+                <h3 class="text-2xl font-semibold">Withdraw</h3>
+                <p class="text-7xl font-bold">$<span id="withdraw-total">0</span></p>
+            </div>
+            <div class="bg-yellow-400 px-8 py-5 rounded-xl">
+                <h3 class="text-2xl font-semibold">Balance</h3>
+                <p class="text-7xl font-bold">$<span id="balance-total">1240</span></p>
+            </div>
+        </div>
+
+        <!-- deposit and withdraw panel -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-9/12 mx-auto text-white">
+            <div class="bg-[#8380B6] px-8 py-5 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">Deposit Amount</h3>
+            <input class="w-9/12 mb-4 rounded-lg h-8 px-2 text-black" type="text" name="" id="deposit-input" placeholder="Enter deposit amount"> <br>
+            <button class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-700 active:bg-black" id="btn-deposit">Deposit</button>
+            </div>
+            <div class="bg-[#111D4A] px-8 py-5 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">Withdraw Amount</h3>
+            <input class="w-9/12 mb-4 rounded-lg h-8 px-2 text-black" type="text" name="" id="withdraw-input" placeholder="Enter withdrawal amount"> <br>
+            <button class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-700 active:bg-black" id="btn-withdraw">Withdraw</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="utilities/deposit.js"></script>
+    <script src="utilities/withdraw.js"></script>
+</body>
+</html>
